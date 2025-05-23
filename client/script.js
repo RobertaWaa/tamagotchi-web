@@ -6,7 +6,7 @@ class Tamagotchi {
 
     async loadInitialState() {
         try {
-            const response = await fetch('http://localhost:3000/api/tamagotchi');
+            const response = await fetch('https://tamagotchi-web.vercel.app/api/tamagotchi');
             const data = await response.json();
             this.updateState(data);
             this.startDecreaseInterval(); 
@@ -30,7 +30,7 @@ class Tamagotchi {
 
     async decreaseStats() {
         try {
-            const response = await fetch('http://localhost:3000/api/tamagotchi/decrease', {
+            const response = await fetch('https://tamagotchi-web.vercel.app/api/tamagotchi/decrease', {
                 method: 'POST'
             });
             const data = await response.json();
@@ -42,7 +42,7 @@ class Tamagotchi {
 
     async sendAction(action) {
         try {
-            const response = await fetch(`http://localhost:3000/api/tamagotchi/${action}`, {
+            const response = await fetch(`https://tamagotchi-web.vercel.app/api/tamagotchi/${action}`, {
                 method: 'POST'
             });
             const data = await response.json();
@@ -102,7 +102,7 @@ class Tamagotchi {
 
     async resetGame() {
         try {
-            const response = await fetch('http://localhost:3000/api/tamagotchi/reset', {
+            const response = await fetch('https://tamagotchi-web.vercel.app/api/tamagotchi/reset', {
                 method: 'POST'
             });
             const data = await response.json();
