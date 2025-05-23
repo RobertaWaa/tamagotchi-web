@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tamagotchi-container {
+    margin: 20px 0;
+}
+
+#tamagotchi-image img {
+    width: 150px;
+    height: 150px;
+}
+
+.status {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.status span {
+    display: inline-block;
+    width: 80px; 
+    text-align: right; 
+    margin-right: 10px;
+}
+
+.bar {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    border-radius: 10px;
+    width: 50%; 
+}
+
+#hunger-bar .bar-fill { background-color: #ff6b6b; }
+#happiness-bar .bar-fill { background-color: #4ecdc4; }
+#energy-bar .bar-fill { background-color: #ffd166; }
+#cleanliness-bar .bar-fill { background-color: #a5ffd6; }
+
+.buttons {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin: 20px 0;
+}
+
+.buttons button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    opacity: 0.8;
+}
+
+#message {
+    margin-top: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+#game-over {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffebee;
+    border-radius: 10px;
+}
+
+#game-over button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#game-over button:hover {
+    background-color: #ff5252;
+}
+
+@keyframes revive {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+#pet-image.revive {
+    animation: revive 1s ease-out;
+}

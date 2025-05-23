@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tamagotchi Virtual</h1>
+        
+        <div class="tamagotchi-container">
+            <div id="tamagotchi-image">
+                <img src="assets/happy.png" alt="Tamagotchi" id="pet-image">
+            </div>
+            <div id="status-bars">
+                <div class="status">
+                    <span>Hunger: </span>
+                    <div class="bar" id="hunger-bar"><div class="bar-fill"></div></div>
+                </div>
+                <div class="status">
+                    <span>Happiness: </span>
+                    <div class="bar" id="happiness-bar"><div class="bar-fill"></div></div>
+                </div>
+                <div class="status">
+                    <span>Energy: </span>
+                    <div class="bar" id="energy-bar"><div class="bar-fill"></div></div>
+                </div>
+                <div class="status">
+                    <span>Cleanliness: </span>
+                    <div class="bar" id="cleanliness-bar"><div class="bar-fill"></div></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="feed()">Feed</button>
+            <button onclick="play()">Play</button>
+            <button onclick="sleep()">Sleep</button>
+            <button onclick="clean()">Clean</button>
+        </div>
+
+        <div id="message"></div>
+        <div id="game-over" style="display: none;">
+    <h2>GAME OVER!</h2>
+    <button onclick="resetGame()">Reset the game</button>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
