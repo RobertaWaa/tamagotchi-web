@@ -54,31 +54,14 @@ node server.js
 ### Access the App
 
 Open the frontend by navigating to client/index.html (if served locally), or
-
 Visit the live version: https://tamagotchi-web.vercel.app/
 
 ---
 
 ## Gameplay
 
-Monitor your pet through four status bars: hunger, happiness, energy, cleanliness.
+- Monitor your pet through four status bars: hunger, happiness, energy, cleanliness.
+- Use the buttons to feed, play with, put to sleep, or clean the pet.
+- If a stat reaches zero, the game ends and you hit Reset to start again.
+- Designed to be simple, intuitive, and responsive.
 
-Use the buttons to feed, play with, put to sleep, or clean the pet.
-
-If a stat reaches zero, the game ends—hit Reset to start again.
-
-Designed to be simple, intuitive, and responsive.
-
----
-
-## Contributing
-
-Contributions are welcome!
-
-Fork the repo
-
-Create a new branch (git checkout -b feature/my-feature)
-
-Commit changes and push (git push origin feature/my-feature)
-
-Open a pull request
